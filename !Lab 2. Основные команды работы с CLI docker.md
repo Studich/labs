@@ -1,6 +1,6 @@
 # !Lab 2. Основные команды работы с CLI docker.md
 
-Благодаря лабораторной работы мы изучи основные команды в Docker, необходимые для: 
+Благодаря лабораторной работы я изучил основные команды в Docker, необходимые для: 
 
 Создание и запуск контейнера:
 ```sh
@@ -12,7 +12,7 @@ docker container run my_image
 docker image build -t my_repo/my_image:my_tag .
 ```
 
-Отправка образа в удалённый репозиторий:
+Пуш образа в удалённый репозиторий:
 ```sh
 docker image push my_repo/my_image:my_tag
 ```
@@ -31,11 +31,11 @@ docker images
 ```sh
 docker ps -a
 ```
-Включение работы контейнера
+Запуск контейнера
 ```sh
 docker start (name_container or container_id)
 ```
-Выключение работы контейнера 
+Остановка контейнера 
 ```sh
 docker kill (name_container or container_id)
 ```
@@ -43,11 +43,11 @@ docker kill (name_container or container_id)
 ```sh
 docker rm (container_id)
 ```
-Запуск контейнера и привязка его к хост машине по п
+Запуск контейнера с привязкой к портам
 ```sh
 docker container run -d -p 80:80 --name proxy nginx
 ```
-Список локально скачанных образов
+Список образов
 ```sh
 docker image ls
 ```
